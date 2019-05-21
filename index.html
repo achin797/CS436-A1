@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Message List - Home</title>
+</head>
+<body onload="loadJSONlist()">
+
+<div id="myNav" class="transparent">
+    <a href="#" class="navBtn">Home</a>
+    <a href="./about.html" class="navBtn">About</a>
+</div>
+
+<div id="myDIV" class="header">
+    <h2 style="margin:5px">Message List</h2>
+    <form>
+        <input type="text" id="myInput" placeholder="Message...">
+        <input type="button" onclick="newElement()" class="formBtn" value="Add">
+        <input type="button" onclick="clearForm()" class="formBtn" value="Clear">
+    </form>
+</div>
+
+<div id="listDiv">
+    <ul id="myUL"></ul>
+    <button onclick="clearMessages()" type="button">Clear Messages!</button>
+</div>
+
+<script type="text/javascript" src="./script.js"></script>
+
+</body>
+</html>
